@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+public class Exercicio9 {
+	public static void main(String [] arg) {
+		int n1;
+		int n2;
+		int resultado;
+		
+		n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro:"));
+		n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite um outro inteiro:"));
+		resultado = (n1 * n1) + (n2 * n2);
+		System.out.print("A soma dos quadrados deles é: " + resultado);
+		
+		
+	}
+
+}
