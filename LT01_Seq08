@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+public class Exercicio8 {
+	public void main(String [] arg) {
+		int deposito;
+		double novoValor;
+		deposito = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de seu depósito:"));
+		novoValor = 1.3 * deposito + deposito;
+		System.out.print(("O valor do depósito após um mês de explicação é: " + novoValor));
+		
+		
+	}
+
+}
