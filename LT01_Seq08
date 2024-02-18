@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 public class Exercicio8 {
-	public void main(String [] arg) {
+	public static void main(String [] arg) {
 		int deposito;
 		double novoValor;
 		deposito = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor de seu depósito:"));
