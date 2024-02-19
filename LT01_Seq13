@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+public class Exercicio13 {
+	public static void main(String [] arg) {
+		
+		int qtd_al;
+		int dias = 0;
+		
+		qtd_al = Integer.parseInt(JOptionPane.showInputDialog("Insira a quantidade de alimento em kg"));
+		qtd_al = qtd_al * 1000;
+		
+		dias = qtd_al / 50;
+		
+		System.out.print("A pessoa consumirá toda comida em " + dias + " dias");
+		
+		}
+	
+}
