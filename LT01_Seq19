@@ -1,0 +1,22 @@
+import javax.swing.JOptionPane;
+public class Exercicio19 {
+    public static void main(String [] args){
+        
+        double n1 = Double.parseDouble(JOptionPane.showInputDialog("Digite o primeiro numero"));;
+        double n2 = Double.parseDouble(JOptionPane.showInputDialog("DIgite o segundo numero"));;
+        double maior; 
+        
+        if(n1 > n2){
+            maior = n1;
+        }else{
+            maior = n2;
+        }
+        
+        System.out.print("O maior numero é: " + maior);
+        
+       
+   
+        
+    }
+    
+}
