@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+public class Exercicio29 {
+    public static void main(String[] args){
+       
+        int opc = Integer.parseInt(JOptionPane.showInputDialog("Digite 1 para poupança\nDigite 2 para renda fixa"));
+        double investimento = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor que deseja investir"));
+        double correcao;
+        
+        if(opc == 1){
+            correcao = (investimento * 0.03) + investimento;
+        }else{
+            correcao = (investimento * 0.05) + investimento;
+        }
+        
+        System.out.print("O seu investimento corrigido em 1 mês vai ser: " + correcao);
+    }
+}
