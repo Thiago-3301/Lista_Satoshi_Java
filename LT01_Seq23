@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+public class Exercicio23 {
+    public static void main(String [] args){
+        
+        int n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero em ordem crescente"));
+        int n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero em ordem crescente"));
+        int n3 = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero em ordem crescente"));
+        int n4 = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero qualquer"));
+        
+        if (n4 > n3){
+            System.out.print("Os números em ordem são: " +n1 + "," + n2 + "," + n3 + "," + n4);
+        }else if(n4 < n3 && n4 > n2){
+            System.out.print("Os números em ordem são: " +n1 + "," + n2 + "," + n4 + "," + n3);
+        }else if(n4 < n2 && n4 > n1){
+            System.out.print("Os números em ordem são: " +n1 + "," + n4 + "," + n2 + "," + n3);
+        }else if(n4 < n1){
+            System.out.print("Os números em ordem são: " +n4 + "," + n1 + "," + n2 + "," + n3);
+        }
+    }   
+    
+}
