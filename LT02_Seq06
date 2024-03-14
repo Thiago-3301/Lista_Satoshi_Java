@@ -1,0 +1,24 @@
+import javax.swing.JOptionPane;
+
+public class Lt02_Seq06 {
+    public static void main(String[] args){
+        int vet [] = new int [10];
+        
+        for(int i = 0; i <= 9; i++){
+            vet[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero aleatório"));
+        }
+        for(int i = 0; i <=9; i++){
+            for(int y = i +1; y <=9; y++){
+                if(vet[i] > vet[y]){
+                    int troca = vet[y];
+                    vet[y] = vet[i];
+                    vet[i] = troca;
+                }
+            }
+        }
+        for(int i = 0; i <= 9; i++){
+            System.out.println(vet[i]);
+        }
+    }
+    
+}
