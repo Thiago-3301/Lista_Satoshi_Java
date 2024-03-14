@@ -1,0 +1,29 @@
+import javax.swing.JOptionPane;
+public class LT02_Seq04 {
+    public static void main(String[] args){
+        int vet[] = new int [7];
+        int media = 0;
+        int qtd_aci = 0;
+        
+        for(int i = 0; i <= 6; i++){
+            vet[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor aleatório: "));
+            media += vet[i];
+        }
+        media = media/7;
+        
+        for(int i = 0; i <= 6; i++){
+            if(vet[i] > media){
+                qtd_aci++;
+            }
+            if(vet[i] < media){
+                System.out.println("A posição da nota abaixa d5a media é "+ i);
+            }
+        }
+         System.out.print("A média é " + media +"\nA quantidade de notas acima da média é "+ qtd_aci);
+         
+        
+        
+        
+    }
+    
+}
